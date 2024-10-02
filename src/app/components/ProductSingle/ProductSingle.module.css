@@ -1,0 +1,85 @@
+
+
+.contenedor{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: 2.5em 10em 5em 10em; ;
+    flex-direction: row;
+    gap: 10em;
+}
+
+.img{
+    transition: all 250ms;
+}
+.img:hover{
+    transform:scale(1.05);
+}
+
+.contenedor_foto{
+    display: flex;
+    align-items: center;
+    padding: 2.5em;
+    border-radius: 2em;
+    background-color: rgb(201, 201, 201);
+}
+
+.contenedor_info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+   
+    padding: 0em 8em 0em 0em;
+}
+
+.nombre{
+    font-weight: 500;
+    font-size: 1.9em;
+}
+
+.descripcion{
+    font-size: 1em;
+    color: #838383;
+    font-weight: 400;
+}
+
+.precio{
+    font-size: 1.934em;
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    bottom: 1.4em;
+    align-items: center;
+    font-family: 'Fredoka';
+    font-size: 16px;
+    font-weight: 500;
+    background-clip: padding-box;
+    color:var(--primary-color);
+    background-color:white;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 0.063em 0.188em 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.6em 6.2em;
+    margin: 1.7em 0em;
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+.btn:hover{
+    color: white;
+    background-color:var(--primary-color);
+}
+
+.btn_volver{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: all 250ms;
+}
+

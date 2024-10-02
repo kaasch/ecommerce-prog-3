@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  font-family: Fredoka;
+}
+:root {
+  --primary-color:#0032C9;
+  --secondary-color: #EE99C2;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

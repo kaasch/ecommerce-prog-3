@@ -1,0 +1,17 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+.grilla_productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin-bottom: 6em;
+}
+
+.titulo_cart{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,27 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    bottom: 1.4em;
+    align-items: center;
+    font-family: 'Fredoka';
+    font-size: 16px;
+    font-weight: 500;
+    background-clip: padding-box;
+    color:var(--primary-color);
+    background-color:white;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 0.063em 0.188em 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.6em 1.2em;
+    text-decoration: none;
+    transition: all 250ms;
+    margin-top: 2em;
+}
+
+.btn:hover{
+    color: white;
+    background-color:var(--primary-color);
+}

@@ -1,0 +1,91 @@
+.contenedor{
+width: 22em;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+display: flex;
+background-color: white;
+padding: 2em;
+border-radius: 0.5em;
+border: 0.2em solid transparent;
+transition: all 200ms ease-in-out;
+}
+
+.contenedor:hover{
+    box-shadow: 0px 3px 1.4em#b9b9b9;
+    border-radius: 1em; 
+    transform: scale(1.009);
+}
+
+.contenedor_img{
+    width: 19em;
+    padding: 1em;
+    height: 23em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(201, 201, 201);
+    border-radius: 0.6em;
+}
+
+.img{
+    transition: all 250ms;
+}
+.img:hover{
+    transform:rotate(8deg);
+}
+
+.contenedor_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--text-color);
+    padding-top: 1.4em;
+}
+
+.titulo_item{
+    font-size: 21px;
+    font-weight: 500
+}
+
+.descripcion_item{
+    font-size: 14px;
+    font-weight: 400;
+    color: #858585;
+}
+
+.precio_item{
+    display: flex;
+    bottom:4em;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    bottom: 1.4em;
+    align-items: center;
+    font-family: 'Fredoka';
+    font-size: 16px;
+    font-weight: 500;
+    background-clip: padding-box;
+    color:var(--primary-color);
+    background-color:white;
+    border: 0.2em solid var(--primary-color);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 0.063em 0.188em 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.6em 5em;
+    margin: 1em 0em;
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+.btn:hover{
+    color: white;
+    background-color:var(--primary-color);
+}

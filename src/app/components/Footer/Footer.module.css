@@ -1,0 +1,62 @@
+.container{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    height: 19em;
+    width: 100%;
+}
+
+.container nav ul li{
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.container nav ul{
+    display: flex;
+}
+
+.logo_container{
+    margin-top: 3em
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+.media{
+    gap: 1.3em;
+}
+
+
+.lista_palabras{
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.lista_palabras li{
+    color: white;
+    font-size: 14px;
+    display: flex;
+
+}
+.lista_palabras li a{
+    color: white;
+    font-size: 14px;
+    display: flex;
+
+}
+
+.footer_bottom{
+    color: white;
+    font-size: 12px;
+    margin-top: 2.8em;
+}

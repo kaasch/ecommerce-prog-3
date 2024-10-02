@@ -1,0 +1,102 @@
+.contendor_general{ 
+      padding: 0 1.75em 1.75em 1.75em;
+      border-radius: 0.75rem;
+      margin-left: 0.5rem;
+      font-size: 1.07em;
+      margin-right: 3rem;
+      background-color: grey;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #DDDDDD 2px solid;
+    font-size: 1.07em;
+    padding: 0.6em 0 ;
+
+}
+
+.contenedor_producto{
+    display: flex;
+    align-items: center;
+    
+  
+}
+
+.contenedor_info_gral{
+    display:flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-left: 2.5em;
+
+}
+
+.contenedor_info{
+    display: flex;
+    gap: 0.3em;
+   
+}
+
+.btn_delete{
+ display: flex;
+    justify-content: center;
+    bottom: 1.4em;
+    align-items: center;
+    font-family: 'Fredoka';
+    font-size: 12px;
+    font-weight: 400;
+    background-clip: padding-box;
+    color:var(--primary-color);
+    background-color:#FA5454;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 0.063em 0.188em 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.6em 2em;
+    margin: 1.7em 0em;
+    text-decoration: none;
+    transition: all 250ms;
+    color: white;
+    border: transparent 1px solid;
+}
+
+.btn_delete:hover{
+    color: #FA5454;
+    background-color:white;
+    border: #FA5454 1px solid;
+    font-weight: 500;
+}
+
+.discount{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em 0em 2em;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em 0.5em 2em;
+    font-weight: 500;
+    color: #606060;
+    border-top: #DDDDDD 2px solid;
+}
+
+.contenedor_carrito{
+    padding: 1.75rem;
+    padding-top: 0.7rem;
+    margin-left: 0.8rem;
+    margin-right: 3rem;
+    border-radius: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-bottom: 1.5rem;
+    background-color: #F1F1F1;
+}
