@@ -1,7 +1,5 @@
 import { Fredoka } from 'next/font/google';
 import './globals.css';
-
-
 import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
