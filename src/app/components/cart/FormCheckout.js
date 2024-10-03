@@ -40,7 +40,7 @@ const FormCheckout = () => {
             {errors.mail?.type=== 'required' && <p>El campo de E-mail está vacío</p>}
           </div>
           <div className={styles.contenedor_nombre}>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <input
               className={styles.input}
               type="text"
@@ -49,13 +49,17 @@ const FormCheckout = () => {
               {errors.nombre?.type=== 'required' && <p>El campo de nombre está vacío</p>}
             
             </div>
-            
-            <input
-              className={`${styles.input} ${styles.input_otro}`}
+            <div className="flex flex-col ml-4 w-full">
+              <input
+              className={styles.input}
               type="text"
               placeholder="Apellido"
-              {...register("apellido")}
+              {...register("apellido", {required: true})}
             />
+            {errors.apellido?.type=== 'required' && <p>El campo de Apellido está vacío.</p>}
+            </div>
+            
+            
           </div>
           <div>
             <select className={styles.input} {...register("pais")}>
@@ -66,24 +70,37 @@ const FormCheckout = () => {
             </select>
           </div>
           <div className={styles.contenedor_lugar}>
-            <input
+            <div className="flex flex-col w-full">
+              <input
               className={styles.input}
               type="text"
               placeholder="Ciudad"
-              {...register("ciudad")}
+              {...register("ciudad", {required: true})}
             />
+            {errors.ciudad?.type=== 'required' && <p>El campo de Ciudad está vacío.</p>}
+            </div>
+            
+            <div className="flex flex-col w-full ml-4">
             <input
-              className={`${styles.input} ${styles.input_otro}`}
+              className={styles.input}
               type="text"
               placeholder="Localidad"
-              {...register("localidad")}
+              {...register("localidad" , { required: true })}
             />
-            <input
-              className={`${styles.input} ${styles.input_otro}`}
+            {errors.localidad?.type=== 'required' && <p>El campo de Localidad está vacío.</p>}
+            </div>
+            
+            <div className="flex flex-col w-full ml-4">
+              <input
+              className={styles.input}
               type="text"
               placeholder="Código postal"
-              {...register("localidad")}
+              {...register("codigo", {required: true, pattern: /^[0-9]\d*$/})}
             />
+            {errors.codigo?.type=== 'pattern' && <p>Debe escribir un número.</p>}
+            {errors.codigo?.type=== 'required' && <p>El campo de Código postal está vacío.</p>}
+            </div>
+            
           </div>
 
           <div>
@@ -91,26 +108,31 @@ const FormCheckout = () => {
               className={styles.input}
               type="text"
               placeholder="Dirección"
-              {...register("direccion")}
+              {...register("direccion" , { required: true })}
             />
+            {errors.direccion?.type=== 'required' && <p>El campo de Dirección está vacío.</p>}
           </div>
 
           <div>
             <input
               className={styles.input}
               type="text"
-              placeholder="Piso departamento, casa"
-              {...register("depto")}
+              placeholder="Piso, departamento, casa"
+              {...register("depto" , { required: true, pattern: /^[0-9]\d*$/})}
             />
+            {errors.depto?.type=== 'required' && <p>El campo de Piso, departamento, casa está vacío.</p>}
+            {errors.depto?.type=== 'pattern' && <p>Debe poner el número de piso y el número de departamento.</p>}
           </div>
 
           <div>
             <input
               className={styles.input}
               type="text"
-              placeholder="Telefono"
-              {...register("tel")}
+              placeholder="Teléfono"
+              {...register("tel" , { required: true, pattern:/^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/})}
             />
+            {errors.tel?.type=== 'pattern' && <p>El formato del Número de teléfono es incorrecto.</p>}
+            {errors.tel?.type=== 'required' && <p>El campo de Teléfono está vacío.</p>}
           </div>
 
           <div className={styles.btns}>
