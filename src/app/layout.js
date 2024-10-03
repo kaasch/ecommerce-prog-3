@@ -1,13 +1,13 @@
-import { Inter } from 'next/font/google';
+import { Fredoka } from 'next/font/google';
 import './globals.css';
-//import localFont from '@next/font/local'
+
 
 import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-//const myFont = localFont({src: './Mungil-regular-ttf'})
+const fredoka = Fredoka({ subsets: ['latin'] });
+
 
 export const metadata = {
   title: 'Kalu Cookies',
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={fredoka.className}>
         <AppContextProvider>
           <Navbar />
           {children}
