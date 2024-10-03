@@ -31,18 +31,18 @@ const FormCheckout = () => {
         <div className={styles.contenedor}>
           <div>
             <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="E-mail"
               {...register("mail", { required: true,  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i})}
             />
             {errors.mail?.type=== 'pattern' && <p>El formato del E-mail es incorrecto</p>}
-            {errors.mail?.type=== 'required' && <p>El campo de E-mail está vacío</p>}
+            {errors.mail?.type=== 'required' && <p>El campo de E-mail está vacío</p> }
           </div>
           <div className={styles.contenedor_nombre}>
             <div className="flex flex-col w-full">
               <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Nombre"
               {...register("nombre", { required: true })}/>
@@ -51,7 +51,7 @@ const FormCheckout = () => {
             </div>
             <div className="flex flex-col ml-4 w-full">
               <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Apellido"
               {...register("apellido", {required: true})}
@@ -72,7 +72,7 @@ const FormCheckout = () => {
           <div className={styles.contenedor_lugar}>
             <div className="flex flex-col w-full">
               <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Ciudad"
               {...register("ciudad", {required: true})}
@@ -82,7 +82,7 @@ const FormCheckout = () => {
             
             <div className="flex flex-col w-full ml-4">
             <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Localidad"
               {...register("localidad" , { required: true })}
@@ -92,7 +92,7 @@ const FormCheckout = () => {
             
             <div className="flex flex-col w-full ml-4">
               <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Código postal"
               {...register("codigo", {required: true, pattern: /^[0-9]\d*$/})}
@@ -105,7 +105,7 @@ const FormCheckout = () => {
 
           <div>
             <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Dirección"
               {...register("direccion" , { required: true })}
@@ -115,7 +115,7 @@ const FormCheckout = () => {
 
           <div>
             <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Piso, departamento, casa"
               {...register("depto" , { required: true, pattern: /^[0-9]\d*$/})}
@@ -126,7 +126,7 @@ const FormCheckout = () => {
 
           <div>
             <input
-              className={styles.input}
+              className={`${styles.input} ${errors.mail ? styles.error : ""}`}
               type="text"
               placeholder="Teléfono"
               {...register("tel" , { required: true, pattern:/^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/})}

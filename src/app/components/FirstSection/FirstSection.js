@@ -5,7 +5,39 @@ import styles from "@/app/components/FirstSection/FirstSection.module.css";
 const FirstSection = ({ sectionThreeText }) => {
   return (
     <section>
-      <div className="flex justify-center gap-10 py-11">
+      <div className={styles.contenedor_separador}>
+        <div className={styles.bck_separador}>
+          <div className={styles.dto}>
+            <h2>{sectionThreeText}</h2>
+          </div>
+
+          <div className="flex flex-row gap-28 pt-4">
+            <Image
+              src={`/imgs/cookie/banana.png`}
+              width={273}
+              height={238}
+              sizes="100vw"
+              alt="section cookie"
+            />
+            <Image
+              src={`/imgs/cookie/arandano.png`}
+              width={256}
+              height={238}
+              sizes="100vw"
+              alt="section cookie"
+            />
+
+            <Image
+              src={`/imgs/cookie/choco.png`}
+              width={278}
+              height={238}
+              sizes="100vw"
+              alt="section cookie"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center gap-10 py-14">
         <div className={styles.contenedor_cantantes}>
           <div className={styles.contenedor_cantante}>
             <Image
@@ -52,38 +84,7 @@ const FirstSection = ({ sectionThreeText }) => {
         </div>
       </div>
 
-      <div className={styles.contenedor_separador}>
-        <div className={styles.bck_separador}>
-          <div className={styles.dto}>
-            <h2>{sectionThreeText}</h2>
-          </div>
-
-          <div className="flex flex-row gap-28 pt-4">
-            <Image
-              src={`/imgs/cookie/banana.png`}
-              width={273}
-              height={238}
-              sizes="100vw"
-              alt="section cookie"
-            />
-            <Image
-              src={`/imgs/cookie/arandano.png`}
-              width={256}
-              height={238}
-              sizes="100vw"
-              alt="section cookie"
-            />
-
-            <Image
-              src={`/imgs/cookie/choco.png`}
-              width={278}
-              height={238}
-              sizes="100vw"
-              alt="section cookie"
-            />
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 };
