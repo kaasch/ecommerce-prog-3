@@ -3,6 +3,8 @@
 @tailwind utilities;
 *{
   font-family: Fredoka;
+  --primary-color:#0032C9;
+  --secondary-color: #EE99C2;
 }
 :root {
   --primary-color:#0032C9;

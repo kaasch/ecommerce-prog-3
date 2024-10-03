@@ -22,3 +22,42 @@
   text-align: center;
 }
 
+.contenedor_cantante{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 17em;
+  padding: 3em 2em ;
+  background-color: #FAFAFA;
+  gap: 1em;
+  align-items: center;
+  text-align: center;
+  border: 0.25em solid var(--primary-color);
+  border-radius: 1em;
+  transition: all 250ms ease-out;
+}
+
+.contenedor_cantantes{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 6em;
+  background-color: #FAFAFA;
+
+}
+
+.contenedor_cantante:hover{
+  transform: translate(0, -0.4em);
+
+}
+
+.contenedor_cantantes h3{
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.7em;
+}
+
+.contenedor_cantantes p{
+  color: var(--primary-color);
+  font-weight: 400;
+}
