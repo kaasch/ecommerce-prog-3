@@ -5,7 +5,6 @@ import styles from "@/app/components/ProductsGrid/ProductsGrid.module.css";
 
 export default async function ProductsGrid() {
   const response = await getAllProductsDB()
-  console.log(response.products)
   return (
     <section className={styles.contenedor}>
       <Inner>

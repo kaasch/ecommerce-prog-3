@@ -8,7 +8,7 @@ import FirstSection from '@/app/components/FirstSection/FirstSection';
 
 export default function Home() {
   const {cart} = useAppContext();
-  console.log(cart)
+ 
   return (
     <div>
       <Hero mainText={'Probá el sabor más rico en un bocado'} secondaryText={'Nuestras galletas están hechas con los mejores ingredientes que se siente en cada mordida. Perfectas para darte un gustito o para compartir con quienes más querés!'} />
