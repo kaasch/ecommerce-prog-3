@@ -100,3 +100,10 @@
     margin-bottom: 1.5rem;
     background-color: #F1F1F1;
 }
+
+@media (max-width: 768px){
+    .contenedor_carrito{
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+}

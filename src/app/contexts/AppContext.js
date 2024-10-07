@@ -7,11 +7,6 @@ const AppContext = createContext(undefined);
 export const AppContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-// const cartLengthFunc = () =>{
-//   let cont = 0;
-//   for (let index = 0; index< cart.length)
-// }
-
 
 
   const cartLength = cart.length

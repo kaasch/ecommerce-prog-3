@@ -9,7 +9,7 @@ const About = async () => {
         Acerca de nosotros
       </h1>
       <div className="flex flex-col gap-16">
-        <div className="flex flex-row-reverse gap-20 justify-center items-center">
+        <div className="flex flex-row-reverse gap-20 justify-center items-center max-[768px]:flex-col max-[768px]:gap-9">
           <Image
             className="w-96"
             src={`/imgs/nosotros/about1.png`}
@@ -17,7 +17,7 @@ const About = async () => {
             height={300}
             alt="about-1"
           />
-          <p className="w-1/3 leading-7 text-base">
+          <p className="w-1/3 leading-7 text-base max-[768px]:w-3/4">
             Todo arrancó en 2020 con una idea simple pero que nos copaba: hacer
             cookies que no solo fueran riquísimas, sino que también tuvieran esa
             onda de la música y la cultura argentina. Lo que empezó como un
@@ -27,7 +27,7 @@ const About = async () => {
             en el corazón (y el estómago) de todos.
           </p>
         </div>
-        <div className="flex gap-20 justify-center items-center">
+        <div className="flex gap-20 justify-center items-center max-[768px]:flex-col max-[768px]:gap-9">
           <Image
             className="w-96"
             src={`/imgs/nosotros/about2.png`}
@@ -35,11 +35,11 @@ const About = async () => {
             height={300}
             alt="about-1"
           />
-          <p className="w-1/3 leading-7 text-base">
+          <p className="w-1/3 leading-7 text-base max-[768px]:w-3/4">
           Con el tiempo, fuimos sumando una gran cantidad de clientes leales, amantes de nuestras cookies artesanales. Personas que aprecian que cada ingrediente está elegido con el mismo detalle con el que un músico compone su mejor tema. Y el boca a boca nos fue trayendo más gente, algo que nos demuestra el cariño y la confianza que la comunidad tiene en Kalu Cookies.
           </p>
         </div>
-        <div className="flex flex-row-reverse gap-20 justify-center items-center">
+        <div className="flex flex-row-reverse gap-20 justify-center items-center max-[768px]:flex-col max-[768px]:gap-9">
           <Image
             className="w-96"
             src={`/imgs/nosotros/about3.png`}
@@ -47,12 +47,12 @@ const About = async () => {
             height={300}
             alt="about-1"
           />
-          <p className="w-1/3 leading-7 text-base">
+          <p className="w-1/3 leading-7 text-base max-[768px]:w-3/4">
           Nos encanta compartir nuestra pasión por las cookies y la música con todos ustedes. Seguimos poniéndole calidad y onda a cada galleta que horneamos, porque al final, todo esto es parte de nuestra propia música. ¡Gracias por sumarte a este viaje con nosotros!
           </p>
         </div>
       </div>
-      <h1 className="text-center leading-loose tracking-wider mt-5 font-semibold text-2xl text-primary-color w-1/2">
+      <h1 className="text-center leading-loose tracking-wider mt-5 font-semibold text-2xl text-primary-color w-1/2 max-[768px]:w-3/4">
       ¡Gracias por ser parte de nuestra historia y por permitirnos ser parte de sus momentos especiales!
       </h1>
     </div>

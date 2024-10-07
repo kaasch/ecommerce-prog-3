@@ -11,7 +11,7 @@ const FirstSection = ({ sectionThreeText }) => {
             <h2>{sectionThreeText}</h2>
           </div>
 
-          <div className="flex flex-row gap-28 pt-4">
+          <div className="flex flex-row gap-28 pt-4 max-[768px]:flex-col">
             <Image
               src={`/imgs/cookie/banana.png`}
               width={273}

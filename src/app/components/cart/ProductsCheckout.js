@@ -15,7 +15,7 @@ const ProductsCheckout = () => {
 
   return (
     <div>
-      {cartLength === 0 ? ( <div className="p-8 bg-gray-100 ml-2 mr-12 rounded-xl">
+      {cartLength === 0 ? ( <div className="p-8 bg-gray-100 ml-2 mr-12 rounded-xl max-[768px]:ml-12">
         <div className="text-center text-slate-500">
           <p>El carrito está vacío</p>
           </div>
