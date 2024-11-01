@@ -26,6 +26,9 @@ export default function Navbar() {
           <li>
             <Link href={`/cart`}>Carrito</Link>
           </li>
+          <li>
+            <Link href={`/personalized`}>Creá tu propia cookie</Link>
+          </li>
         </ul>
       </nav>
 

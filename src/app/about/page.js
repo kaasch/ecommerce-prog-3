@@ -4,6 +4,7 @@ import Image from "next/image";
 const About = async () => {
   const products = await getAllProductsDB();
   return (
+    
     <div className="flex gap-14 flex-col mb-16 items-center">
       <h1 className="text-center mt-5 font-semibold text-3xl text-primary-color">
         Acerca de nosotros
