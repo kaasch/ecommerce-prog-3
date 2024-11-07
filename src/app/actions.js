@@ -1,5 +1,8 @@
 import axios from 'axios';
 import Product from "@/app/models/Product";
+import Chips from "@/app/models/Chips"
+import Masa from "@/app/models/Masa"
+import Topping from "@/app/models/Topping"
 import dbConnect from '@/app/database/dbConnect'
 
 const getAllProducts = async () => {
@@ -12,7 +15,7 @@ const getAllProducts = async () => {
 };
 
 const getOneProduct = async (id) => {
-  //TO BE CONTINUED
+ 
   try {
     const response = await axios.post('http://localhost:3000/api/products', {
       id,
@@ -46,4 +49,42 @@ export async function getOneProductDB(id){
   }
 }
 
+export async function getAllMasaDB() {
+  await dbConnect();
+  try {
+    const masa = await Masa.find();
+    console.log("Data fetched from Masa collection:", masa); 
+    return { masa: JSON.parse(JSON.stringify(masa)) };
+  } catch (error) {
+    console.error("Error fetching Masa data:", error); 
+    return { masa: [], category: null };
+  }
+}
+
+
+
+export async function getAllChipsDB() {
+  await dbConnect();
+  try {
+    const chips = await Chips.find();
+   
+    return { chips: JSON.parse(JSON.stringify(chips)) };
+  } catch (error) {
+    
+    return { chips: [], category: null };
+  }
+}
+
+
+export async function getAllToppingDB() {
+  await dbConnect();
+  try {
+    const topping = await Topping.find();
+   
+    return { topping: JSON.parse(JSON.stringify(topping)) };
+  } catch (error) {
+    
+    return { topping: [], category: null };
+  }
+}
 export { getAllProducts, getOneProduct };

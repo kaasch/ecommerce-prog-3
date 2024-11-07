@@ -1,6 +1,7 @@
 import { Fredoka } from 'next/font/google';
 import './globals.css';
 import { AppContextProvider } from '@/app/contexts/AppContext';
+import { PersonalizationProvider } from '@/app/contexts/PersonalizationContext';
 import Navbar from '@/app/components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -16,10 +17,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={fredoka.className}>
+      
         <AppContextProvider>
+        <PersonalizationProvider>
+        
           <Navbar />
           {children}
+          
+        </PersonalizationProvider>
         </AppContextProvider>
+       
         <Footer/>
       </body>
     </html>
