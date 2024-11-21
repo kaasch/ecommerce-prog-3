@@ -7,6 +7,10 @@ export function PersonalizationProvider({ children }) {
   const [selectedMasa, setSelectedMasa] = useState(null); //no se va llenando el array, sino que se selecciona una masa sola, semaneja un unico valor. null para que arranque en cero con la imagen de base
   const [selectedChips, setSelectedChips] = useState([]); //acumulativo
   const [selectedToppings, setSelectedToppings] = useState([]); //seleccionado o sino cambia el estado
+  const [cookieName, setCookieName] = useState('');
+  const [personName, setPersonName] = useState('');
+  
+
 
   const selectMasa = (masa) => setSelectedMasa(masa);
   
@@ -26,6 +30,7 @@ export function PersonalizationProvider({ children }) {
     );
   };
 
+
   return (
     <PersonalizationContext.Provider 
     value={{
@@ -34,7 +39,12 @@ export function PersonalizationProvider({ children }) {
       selectedChips, 
       toggleChip, 
       selectedToppings, 
-      toggleTopping }}>
+      toggleTopping,
+      cookieName,
+      setCookieName,
+      personName,
+      setPersonName
+      }}>
       {children}
     </PersonalizationContext.Provider>
   );

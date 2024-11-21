@@ -5,5 +5,7 @@ const masaSchema = new Schema({
     image: { type: String, required: true },
   });
   
-  const Masa = mongoose.models.Masa || mongoose.model("Masa", masaSchema);
+  const Masa = 
+    mongoose.models.Masa || mongoose.model("Masa", masaSchema);
  export default Masa;
+

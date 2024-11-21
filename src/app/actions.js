@@ -53,10 +53,8 @@ export async function getAllMasaDB() {
   await dbConnect();
   try {
     const masa = await Masa.find();
-    console.log("Data fetched from Masa collection:", masa); 
     return { masa: JSON.parse(JSON.stringify(masa)) };
-  } catch (error) {
-    console.error("Error fetching Masa data:", error); 
+  } catch (error) { 
     return { masa: [], category: null };
   }
 }

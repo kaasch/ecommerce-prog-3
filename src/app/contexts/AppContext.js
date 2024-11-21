@@ -6,9 +6,12 @@ const AppContext = createContext(undefined);
 
 export const AppContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [userCookies, setUserCookies] = useState([]);
+
+  console.log(userCookies)
 
 
-
+5
   const cartLength = cart.length
 
   const handleAddToCart = (name, price, image, id, quantity) =>{
@@ -41,6 +44,8 @@ export const AppContextProvider = ({ children }) => {
   const subtotal = cartTotal(); 
   const discountAmount = subtotal * discountPercentage; 
   const totalWithDiscount = subtotal-discountAmount;
+
+
   
 
   return (
@@ -54,7 +59,9 @@ export const AppContextProvider = ({ children }) => {
         handleRemoveProduct,
         subtotal, 
         discountAmount,
-        totalWithDiscount
+        totalWithDiscount,
+        userCookies,
+        setUserCookies
       }}
     >
       {children}

@@ -32,6 +32,7 @@
     background-color: #d6d6d6;
     border-radius: 1em;
     text-align: center;
+    overflow-y: auto;
   }
 
 
@@ -47,7 +48,7 @@
     text-align: center;
     color: var(--primary-color);
     font-size: 1.8em;
-    font-weight: 500;
+    font-weight: 600;
   }
 
 .input{
