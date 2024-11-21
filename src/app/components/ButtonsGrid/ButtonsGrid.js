@@ -39,14 +39,14 @@ export default function ButtonsGrid() {
   }, []);
 
   return (
-    <section className="px-4 flex justify-center text-center">
+    <section className=" flex justify-center text-center">
 
       {step === 0 && (
         <div className="mb-2">
-          <div className="flex justify-center text-center pl-10">
+          <div className="py-2 flex justify-center text-center">
              <button onClick={() => handlePrev()} disable={true} className="cursor-not-allowed">       
          <Image
-          src={`/imgs/personalizada/flechas/prev.svg`}
+          src={`/imgs/personalizada/flechas/prev-disabled.svg`}
           alt={"prev flecha"}
           width={10}
           height={10}
@@ -71,7 +71,7 @@ export default function ButtonsGrid() {
 
       {step === 1 && (
         <div className="mb-2">
-        <div className="flex justify-items-center items-center">
+        <div className="flex justify-center text-center">
            <button onClick={() => handlePrev()}>       
        <Image
         src={`/imgs/personalizada/flechas/prev.svg`}
@@ -98,7 +98,7 @@ export default function ButtonsGrid() {
       )}
       {step === 2 && (
         <div className="mb-2">
-          <div className="flex justify-items-center items-center">
+          <div className="flex justify-center text-center">
              <button onClick={() => handlePrev()}>       
          <Image
           src={`/imgs/personalizada/flechas/prev.svg`}
@@ -109,7 +109,7 @@ export default function ButtonsGrid() {
         <h3 className="text-primary-color px-8 py-6 font-medium">Toppings </h3>
         <button onClick={() => handleNext()}  className="cursor-not-allowed">     
           <Image
-          src={`/imgs/personalizada/flechas/next.svg`}
+          src={`/imgs/personalizada/flechas/next-disabled.svg`}
           alt={"next flecha"}
           width={10}
           height={10}

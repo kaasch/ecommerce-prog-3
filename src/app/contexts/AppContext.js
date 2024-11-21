@@ -11,7 +11,6 @@ export const AppContextProvider = ({ children }) => {
   console.log(userCookies)
 
 
-5
   const cartLength = cart.length
 
   const handleAddToCart = (name, price, image, id, quantity) =>{

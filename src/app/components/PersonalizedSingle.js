@@ -34,7 +34,7 @@ function PersonalizedSingle() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col">
       <div className={styles.textos}>
         <h1>Creá tu propia Cookie</h1>
         <input
@@ -43,13 +43,15 @@ function PersonalizedSingle() {
           placeholder="Nombre de la cookie..."
           value={cookieName} // se asocia el valor del input al estado del contexto
           onChange={handleCookieName} // se actualiza el state
+          required
         />
          <input
-          className={styles.input}
+          className={styles.input_dos}
           type="text"
           placeholder="Nombre del artista..."
           value={personName}
           onChange={handlePersonName} 
+          required
         />
       </div>
   
@@ -88,7 +90,6 @@ function PersonalizedSingle() {
         <div className="flex flex-col gap-6">
           <div className={styles.custom}>
             <ButtonsGrid/>
-          
           </div>
           <div>
             <button className={styles.btn} onClick={submitPersonalization}>Siguiente</button>
