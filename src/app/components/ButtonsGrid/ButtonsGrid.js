@@ -19,8 +19,6 @@ export default function ButtonsGrid() {
     if (step < 2 ) setStep( step + 1)
   }
 
-
-
   const getData = async () => {
     setLoading(true);
     try {
@@ -71,7 +69,7 @@ export default function ButtonsGrid() {
 
       {step === 1 && (
         <div className="mb-2">
-        <div className="flex justify-center text-center">
+        <div className="py-2 flex justify-center text-center">
            <button onClick={() => handlePrev()}>       
        <Image
         src={`/imgs/personalizada/flechas/prev.svg`}
@@ -98,7 +96,7 @@ export default function ButtonsGrid() {
       )}
       {step === 2 && (
         <div className="mb-2">
-          <div className="flex justify-center text-center">
+          <div className="py-2 flex justify-center text-center">
              <button onClick={() => handlePrev()}>       
          <Image
           src={`/imgs/personalizada/flechas/prev.svg`}

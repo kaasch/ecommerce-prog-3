@@ -13,7 +13,7 @@ const Hero = ({ mainText, secondaryText }) => {
 
       <Image
         className={styles.hero_img}
-        src={`/imgs/cookie/classic.png`}
+        src={`/imgs/cookie/classic-cortada.png`}
         width={0}
         height={0}
         sizes="100vw"
